@@ -9,46 +9,49 @@
     <title>Landing Page</title>
   </head>
   <body>
-    <header class="bg-fintech-gradient text-white font-semibold h-[70vh]">
-      <div class="container w-[90vw] my-0 mx-auto h-[10%]">
-        <div class="logo inline-block">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline-block mt-1">
+    <header class="container-header bg-fintech-gradient mx-auto text-white font-semibold h-[70vh]">
+      <div class="container-nav w-[90vw] xxs:max-xs:flex flex-col items-center my-0 mx-auto pt-2">
+        <div class="logo sm:inline-block">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline-block sm:mt-1">
             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
           </svg>
-          <p class="font-bold inline-block mt-5 lg:text-xl md:text-lg">paynow</p>
+          <p class="font-bold inline-block sm:mt-5 lg:text-xl md:text-lg">paynow</p>
         </div>
-        <nav class=" inline-block float-right mt-5">
-          <ul>
-            <li class= "flex gap-5">
-              <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Services</a>
-              <a href="">Contact</a>
-            </li>
+        <nav class="sm:inline-block sm:float-right sm:mt-7 xxs:max-xs:mt-2">
+          <ul class= "flex gap-5">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
         </nav>
       </div>
-      <div class="container lg:w-[65vw] h-[85%] mx-auto grid grid-cols-2 grid-rows-1 items-center mt-2">
+      <div class="container-head xxs:max-xs:pl-4 mx-auto sm:w-[65vw] h-[85%] grid grid-cols-2 grid-rows-1 items-center sm:mt-2">
         <div class="text-left">
           <h1 class="[font-size:clamp(2rem,4vw,6rem)] mb-5">Financial Services for Everyone</h1>
-          <p class="mb-5">Our innovative fintech platform provides secure and reliable financial solutions designed to meet your needs</p>
-          <button class="text-white rounded-xl px-5 py-1 bg-fintech-purple">Get Started</button>
+          <p class="mb-5">Our innovative fintech platform provides secure and reliable financial 
+            solutions designed to meet your needs</p>
+          <button class="text-white rounded-xl px-5 py-2 bg-fintech-purple">Get Started</button>
         </div>
         <div class="text-right flex justify-end">
-          <img src="./src/phone_image_for_Home.png" alt="" class="w-[220px] h-auto">
+          <img src="./src/phone_image_for_Home.png" alt="" class="md:w-[220px] h-auto">
         </div>
       </div>
     </header>
 
     <section>
       <!-- Our Features ***********************************---------------------------------------------- -->
-      <div class="OurFeatures lg:w-[65%] mx-auto grid grid-cols-2 text-[#1F2937] mt-5">
-        <div class="text-left">
-          <h1 class="text-2xl font-bold">Our features</h1>
-          <div class="feature flex gap-2 mt-3">
-            <span class="inline-flex items-center justify-center rounded-md bg-purple-100 border border-purple-300 p-2">
+      <div class="OurFeatures px-4 lg:px-0 lg:w-[65%] mx-auto grid sm:grid-cols-2 sm:grid-rows-1 text-[#1F2937] mt-5">
+        <div class="featureBlock1 sm:text-left">
+          <h1 class="text-2xl font-bold xxs:max-xs:text-center">Our features</h1>
+          <div class="feature flex items-center gap-3 mt-3">
+            <span class="inline-flex items-center justify-center rounded-lg bg-purple-100 border border-purple-300 w-12 h-12 shrink-0">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-purple-700">
-                <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 
+                0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 
+                9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 
+                0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 
+                2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
               </svg>
             </span>
             <div class="block-text">
@@ -56,9 +59,9 @@
               <p>Advanced security measures to protect your data</p>
             </div>
           </div>
-          <div class="feature flex gap-2 mt-3">
-            <span class="inline-flex items-center justify-center rounded-md bg-purple-500 p-2 shadow-lg">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-white">
+          <div class="feature items-center flex gap-3 mt-3">
+            <span class="inline-flex items-center justify-center rounded-md border border-purple-300 bg-purple-100 w-12 h-12 shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-purple-700">
                 <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clip-rule="evenodd" />
               </svg>
             </span>
@@ -67,8 +70,8 @@
               <p>Quick and easy payments and transfers.</p>       
             </div>
           </div>
-          <div class="feature flex gap-2 mt-3">
-            <span class="inline-flex items-center justify-center rounded-md bg-purple-100 border border-purple-300 p-2">
+          <div class="feature items-center flex gap-3 mt-3">
+            <span class="inline-flex items-center justify-center rounded-md bg-purple-100 border border-purple-300 w-12 h-12 shrink-0">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-purple-700">
                 <path fill-rule="evenodd" d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5ZM18 1.5a.75.75 0 0 1 .728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.625 2.625 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.625 2.625 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5ZM16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0 1 16.5 15Z" clip-rule="evenodd" />
               </svg>
@@ -79,33 +82,34 @@
             </div>
           </div>
         </div>
-        <div class="text-right">
+        <div class="featureBlock2 text-center sm:text-right mt-5 sm:mt-0">
             <h6 class="text-2xl font-bold mb-3">Powerful Analytics Tools</h3>
             <p>Gain insights into your financial activity with our comprehensive analytics and reporting tools</p>
         </div>
       </div>
 
       <!-- About US ***********************************---------------------------------------------- -->
-      <div class="aboutUs mt-5 gap-5 lg:w-[65vw] mx-auto grid grid-cols-2 grid-rows-1">
-        <div class="text-left">
+      <div class="aboutUs px-4 lg:px-0 mt-5 gap-5 lg:w-[65vw] mx-auto grid sm:grid-cols-2 sm:grid-rows-1">
+        <div class="text-center sm:text-left sm:flex flex-col justify-center">
           <h1 class="font-semibold text-2xl">About Us</h1>
-            <p class="mt-3 font-medium">Empowering your financial freedom</p>
-              <p class="mt-3 text-sm">We started with a simple labar to make financial sercives accessible to everyone. Today we empower millions of users to take control of their financial future</p>
-              <button class="mt-3 rounded-xl border border-purple-300 bg-purple-100 text-purple-700 p-2">Learn more</button>
-            </div>
-        <div class="text-right flex justify-end">
-          <img src="src/Illustration de la page About.png" class="w-[300px]" alt="">
+          <p class="mt-3 font-medium">Empowering your financial freedom</p>
+          <p class="mt-3 text-sm">We started with a simple labar to make financial sercives accessible to everyone. Today we empower millions of users to take control of their financial future</p>
+          <button class="mt-3 rounded-xl border border-purple-500 bg-purple-500 text-white p-2 font-semibold shadow-md">Learn more</button>
+        </div>
+        <div class="hidden sm:text-right sm:flex sm:justify-end">
+          <img src="src/Illustration de la page About.png" class="sm:w-[300px]" alt="">
         </div>
       </div>
 
       <!-- Our Services ***********************************---------------------------------------------- -->
-      <div class="OurService mt-5 lg:w-[65vw] mx-auto">
+      <div class="OurService px-4 lg:px-0 mt-5 lg:w-[65vw] mx-auto text-center">
         <h1 class="text-2xl font-semibold">Our Services</h1>
         <p class="mt-3 font-medium">Simplifying your financial journey</p>
-        <div class="container mt-2 grid grid-cols-4 grid-rows-1 gap-3">
+
+        <div class="container-services mt-2 sm:grid grid-cols-4 grid-rows-1 sm:gap-3 xxs:max-xs:space-y-3">
           <div class="box-service border-2 border-gray-100 rounded-lg p-3">
-            <span class="inline-flex items-center justify-center rounded-lg shadow-lg bg-purple-500 p-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+            <span class="inline-flex items-center justify-center rounded-lg bg-purple-100 border border-purple-300 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-purple-500">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
               </svg>
             </span>
@@ -113,8 +117,8 @@
             <p class="mt-2">Manage your accounts seomlessly</p>
           </div>
           <div class="box-service border-2 border-gray-100 rounded-lg p-3">
-            <span class="inline-flex items-center justify-center rounded-lg shadow-lg bg-purple-500 p-2">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+            <span class="inline-flex items-center justify-center rounded-lg bg-purple-100 border border-purple-300 p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-purple-500">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
               </svg>
             </span>
@@ -143,7 +147,7 @@
       </div>
 
       <!-- Pricing******************************************---------------------------------------------------- -->
-       <div class="pricing mt-5 lg:w-[65vw] mx-auto">
+       <div class="pricing px-4 lg:px-0 mt-5 lg:w-[65vw] mx-auto text-center">
         <h1 class="text-2xl font-semibold">Pricing</h1>
         <h3 class="font-medium mt-3">Choose the right plan for you</h3>
           <div class="price-container grid grid-cols-2 grid-rows-1 mt-2 gap-5">
@@ -168,7 +172,7 @@
                 </svg>
                 <p>Basic support</p>
               </div>
-              <button class="mt-3 p-2 w-full text-white bg-purple-500 border border-purple-500 rounded-xl">Get Started</button>
+              <button class="mt-3 p-2 w-full text-white bg-purple-500 border border-purple-500 rounded-xl font-semibold">Get Started</button>
             </box-pricing>
             <box-pricing class="p-3 border-2 border-gray-100 rounded-xl">
               <h3 class="font-bold">Premium</h3>
@@ -191,14 +195,14 @@
                 </svg>
                 <p>Advanced plainning tools</p>
               </div>
-              <button class="mt-3 p-2 w-full text-white bg-purple-500 border border-purple-500 rounded-xl">Get Started</button>
+              <button class="mt-3 p-2 w-full text-white bg-purple-500 border border-purple-500 rounded-xl font-semibold">Get Started</button>
             </box-pricing>
           </div>
        </div>
 
        <!-- Frequently Asked Questions -->
-        <div class="FAQ mt-5 lg:w-[65vw] mx-auto">
-          <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+        <div class="FAQ px-4 lg:px-0 mt-5 lg:w-[65vw] mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">Frequently Asked Questions</h2>
           
           <div class="space-y-4">
             <details class="group border border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500 font-medium rounded-lg p-2">
@@ -232,18 +236,18 @@
     </section>
 
     <footer class="my-8">
-      <div class="container lg:w-[65vw] mx-auto">
+      <div class="container-footer px-4 lg:px-0 lg:w-[65vw] mx-auto text-center">
         <h2 class="text-3xl font-bold">Subscribe to our newsletter</h2>
         <form action="" class="flex gap-2 mt-5">
           <input type="email" name="" id="" placeholder="Enter your email" class="w-full border border-gray-300 rounded-md shadow-sm focus:border-purple-500 focus:ring-purple-500 p-2" />
           <button class="py-2 px-5 text-white font-semibold bg-purple-500 border border-purple-500 rounded-md">Subscribe</button>
         </form>
-        <div class="foot mt-5 grid grid-cols-2 grid-rows-1 items-center">
-          <div class="copy-write flex items-center">
+        <div class="foot mt-5 sm:grid grid-cols-2 grid-rows-1 items-center">
+          <div class="copy-write flex items-center xxs:max-xs:justify-center">
             <span>&copy;</span>
             <p>2025 paynow. All rights reserved</p>
           </div>
-          <div class="logo gap-3 flex justify-end">
+          <div class="logo gap-3 mt-3 sm:mt-0 flex justify-center sm:justify-end">
             <span class="border border-purple-500 bg-purple-500 shrink-0 text-white rounded-full p-2 shadow-lg inline-flex">
               <i class="fa-brands fa-facebook-f"></i>            
             </span>

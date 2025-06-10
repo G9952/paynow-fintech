@@ -6,24 +6,23 @@ export default {
   ],
   theme: {
     extend: {
-       backgroundImage: {
+      backgroundImage: {
         'fintech-gradient': 'linear-gradient(to top, #E100FF, #7F00FF)',
       },
       backgroundColor:{
         'fintech-purple':'#7F00FF',
-        'fintech-light-purple':'#E100FF',
-        'fintech-dark-purple':'#4B0082',
-        'fintech-light-blue':'#00BFFF',
-        'fintech-dark-blue':'#00008B',
       },
-      colors:{
-        'fintech-purple':'#7F00FF',
-        'fintech-light-purple':'#E100FF',
-        'fintech-dark-purple':'#4B0082',
-        'fintech-light-blue':'#00BFFF',
-        'fintech-dark-blue':'#00008B',
-      },
-    },
+      screens:{
+        xxs: '16rem', // 256px
+        xs: '30rem', // 480px
+        sm: '40rem',   // 640px
+        md: '48rem',   // 768px
+        lg: '64rem',   // 1024px
+        xl: '80rem',   // 1280px
+        '2xl': '96rem' // 1536px
+      }
+      
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),
